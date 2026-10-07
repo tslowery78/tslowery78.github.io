@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engineering Labs · SideQuest Forge</title>
+<meta name="description" content="Free interactive engineering explainers and hand-calc tools by Tom Lowery, SideQuest Forge.">
+<style>
+  :root { --bg:#0f1420; --card:#1a2233; --ink:#eef2f8; --dim:#9aa7bd; --accent:#f5a524; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:48px 20px 32px; }
+  h1 { font-size:2.4rem; margin:0 0 6px; }
+  .lead { color:var(--dim); margin:0 0 32px; font-size:1.15rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+  a.card { display:block; background:var(--card); border-radius:14px; padding:22px; color:inherit; text-decoration:none; border:2px solid transparent; transition:border-color .15s, transform .15s; }
+  a.card:hover, a.card:focus { border-color:var(--accent); transform:translateY(-2px); }
+  .card h2 { margin:0 0 6px; font-size:1.35rem; }
+  .card p { margin:0 0 14px; color:var(--dim); }
+  .go { color:var(--accent); font-weight:600; }
+  footer { max-width:880px; margin:0 auto; padding:24px 20px 48px; color:var(--dim); font-size:.95rem; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Engineering Labs</h1>
+  <p class="lead">Free tools you can play with in the browser.</p>
+  <div class="grid">
+    <a class="card" href="/multibody-lab/">
+      <h2>Multibody Lab</h2>
+      <p>How many ways can a mechanism move? Grübler's equation, with live linkages.</p>
+      <span class="go">Open →</span>
+    </a>
+    <a class="card" href="/quick-checks/">
+      <h2>Quick Checks</h2>
+      <p>Hand-calc tools: beams, natural frequency, Miles' equation, Grms, margins, bolts.</p>
+      <span class="go">Open →</span>
+    </a>
+    <a class="card" href="/rover-mount-kinematics/">
+      <h2>Rover Mount</h2>
+      <p>Kinematic vs overconstrained mounts, shown on a 6-strut release mount.</p>
+      <span class="go">Open →</span>
+    </a>
+    <a class="card" href="/binary-lab/">
+      <h2>Binary Lab</h2>
+      <p>Bits, bytes and endianness, one interactive slide at a time.</p>
+      <span class="go">Open →</span>
+    </a>
+  </div>
+</main>
+<footer>
+  Made by Tom Lowery at <a href="https://sidequestforgestudio.com">SideQuest Forge</a>.
+  For learning and quick estimates, not a substitute for checked analysis.
+</footer>
+</body>
+</html>
